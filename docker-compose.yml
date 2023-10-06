@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  my-express-app:
+    image: my-express-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3004:3004'
+    environment:
+      NODE_ENV: production
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
