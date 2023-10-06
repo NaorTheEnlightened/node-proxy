@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  my-express-app:
-    image: my-express-app:latest
+  node-proxy:
+    image: node-proxy:latest
     build:
       context: .
       dockerfile: Dockerfile
