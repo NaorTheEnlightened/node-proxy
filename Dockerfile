@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:16-alpine
+FROM node:14.16-alpine
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3004
 
 # Define the command to run the app using CMD which defines your runtime 
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]
